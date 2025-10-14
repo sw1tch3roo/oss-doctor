@@ -1,0 +1,15 @@
+{
+    "$schema": "https://unpkg.com/@changesets/config/schema.json",
+    "changelog": [
+        "./changelog-oss-doctor.cjs",
+        {
+            "repo": "sw1tch3roo/oss-doctor"
+        }
+    ],
+    "commit": false,
+    "linked": [],
+    "access": "public",
+    "baseBranch": "main",
+    "updateInternalDependencies": "patch",
+    "ignore": []
+}
