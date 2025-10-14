@@ -19,7 +19,7 @@
   },
   "description": "One command to heal your repo: scan, fix, and open a PR with OSS essentials.",
   "license": "MIT",
-  "author": "Dmitrii Gusev",
+  "author": "sw1tch3roo",
   "engines": {
     "node": ">=18"
   },
