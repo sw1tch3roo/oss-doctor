@@ -1,0 +1,65 @@
+{
+  "name": "oss-doctor",
+  "version": "0.1.0",
+  "type": "module",
+  "bin": {
+    "oss-doctor": "./bin/oss-doctor.mjs"
+  },
+  "scripts": {
+    "format": "prettier . --write --cache",
+    "typecheck": "tsc --pretty",
+    "lint": "eslint .",
+    "fix:js": "eslint . --fix",
+    "fix": "npm run fix:js && npm run format",
+    "prepare": "husky",
+    "changeset": "changeset version && node .changeset/rewrite-changelog.mjs CHANGELOG.md",
+    "release": "changeset publish",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "description": "One command to heal your repo: scan, fix, and open a PR with OSS essentials.",
+  "license": "MIT",
+  "author": "Dmitrii Gusev",
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "oss",
+    "community",
+    "github",
+    "templates",
+    "code-of-conduct",
+    "contributing",
+    "security",
+    "ci",
+    "lint",
+    "cli"
+  ],
+  "homepage": "https://github.com/sw1tch3roo/oss-doctor",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sw1tch3roo/oss-doctor.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sw1tch3roo/oss-doctor/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@changesets/cli": "^2.29.5",
+    "@changesets/get-github-info": "^0.6.0",
+    "@eslint/js": "^9.13.0",
+    "@types/node": "^24.7.2",
+    "eslint": "^9.13.0",
+    "eslint-import-resolver-typescript": "^4.4.4",
+    "eslint-plugin-import": "^2.29.1",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.4",
+    "prettier": "^3.6.2",
+    "typescript": "^5.9.3",
+    "vitest": "^3.2.4"
+  },
+  "lint-staged": {
+    "*.{js,mjs}": "eslint --cache --fix",
+    "*.{js,json,md,mjs,ts,yml}": "prettier --write"
+  }
+}

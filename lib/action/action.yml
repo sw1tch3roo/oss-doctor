@@ -1,0 +1,5 @@
+name: 'OSS Doctor Action'
+description: 'Scan and heal your repo'
+runs:
+    using: 'node20'
+    main: 'index.mjs'

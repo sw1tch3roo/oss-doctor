@@ -1,0 +1,15 @@
+name: 🐞 Bug report
+description: Report a reproducible issue
+body:
+    - type: textarea
+      attributes:
+          label: Description
+          placeholder: What happened? Why is it a bug?
+    - type: textarea
+      attributes:
+          label: Steps to Reproduce
+          placeholder: Step-by-step reproduction...
+    - type: input
+      attributes:
+          label: Environment
+          placeholder: OS / Node / Browser / Tooling versions
