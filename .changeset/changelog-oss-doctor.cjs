@@ -1,5 +1,3 @@
-// @ts-check
-
 // based on https://github.com/changesets/changesets/blob/main/packages/changelog-github/src/index.ts
 
 const { getInfo, getInfoFromPullRequest } = require('@changesets/get-github-info');
